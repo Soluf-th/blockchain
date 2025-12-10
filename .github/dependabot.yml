@@ -8,7 +8,7 @@ version: 2
 registries:
   example:
     type: npm-registry
-    url: https://www.npmjs.com/settings/soluf/packages
+    url: https://www.npmjs.com/soluf/
     token: ${{secrets.NPM_TOKEN}}
 updates:
   - package-ecosystem: "npm"
@@ -22,9 +22,9 @@ updates:
     open-pull-requests-limit: 0
     registries:
       - example
-  - package-ecosystem: "gomod"
+  - package-ecosystem: ""
     groups:
       golang:
         applies-to: security-updates
         patterns:
-          - "golang.org*"
+          - ""
