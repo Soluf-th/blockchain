@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   test:
+  - name: Attest Build Provenance
+  uses: actions/attest-build-provenance@v3.0.0
     name: lint-and-unit-test
     strategy:
       matrix:
