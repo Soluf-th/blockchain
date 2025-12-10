@@ -1,4 +1,4 @@
-name: winrdp
+name: ci
 on: [push, workflow_dispatch]
 jobs:
   build:
